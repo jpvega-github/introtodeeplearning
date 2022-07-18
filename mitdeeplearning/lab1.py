@@ -11,7 +11,7 @@ from IPython.display import Audio
 cwd = os.path.dirname(__file__)
 
 def load_training_data():
-    with open(os.path.join(cwd, "data", "irish.abc"), "r") as f:
+    with open(os.path.join(cwd, "data", "rage.abc"), "r") as f:
         text = f.read()
     songs = extract_song_snippet(text)
     return songs
